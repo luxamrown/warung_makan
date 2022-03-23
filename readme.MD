@@ -25,7 +25,7 @@ ketentuan :
 -setelah konsumen selesai makan, dapat melakukan pembayaran di kasir dan kemudian meja tersebut sudah available 
 untuk konsumen berikutnya
 
-## Progress
+## Progress (THIS PROJECT IS NOT FINISHED)
 
 - Print list menu from database
  ![image](https://user-images.githubusercontent.com/63460549/159709733-751af76b-e8fd-4b7a-9145-ba0034a4fac7.png)
