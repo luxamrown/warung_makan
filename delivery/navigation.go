@@ -15,6 +15,6 @@ func BackToMain() {
 }
 
 func ExitApp() {
-	fmt.Println("TERIMA KASIH")
+	fmt.Println("TERIMA KASIH SELAMAT DATANG KEMBALI")
 	os.Exit(0)
 }

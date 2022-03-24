@@ -7,12 +7,12 @@ yaitu meja makan dan sistem pemesanan dan pembayaran.
 Kini meja makan sudah terpisah-pisah dan memiliki nomor masing-masing.
 Pemesanan makan pun sudah menggunakan aplikasi di kasir, dan pembayaran dilakukan setelah selesai makan.
 ketentuan :
--total meja makan ada 30 meja
--sebelum ke meja makan, konsumen harus pesan makanan di kasir, baru akan diarahkan ke meja tertentu
--untuk meja yg sudah ada konsumen, tidak bisa lagi dipilih
--saat akan memilih meja, kasir dapat melihat meja mana yg masih kosong / available
+-total meja makan ada 30 meja XXXXXXXXXXXXXXXXXXXXX
+-sebelum ke meja makan, konsumen harus pesan makanan di kasir, baru akan diarahkan ke meja tertentu XXXXXXXXXXXXX
+-untuk meja yg sudah ada konsumen, tidak bisa lagi dipilihXXXXXXXXXXXXXXXXX
+-saat akan memilih meja, kasir dapat melihat meja mana yg masih kosong / available XXXXXXXXXXXXX
 -Kasir Dapat melihat daftar makanan/mencari makanan berdasarkan kode/nama XXXXXXXXXXXXX
--saat konsumen memesan makanan, kasir menginput data pesanan, nama konsumen, dan juga nomor meja yg akan ditempati konsumen
+-saat konsumen memesan makanan, kasir menginput data pesanan, nama konsumen, dan juga nomor meja yg akan ditempati konsumen XXXXXXXXXXXXXXXXX
 -setelah konsumen selesai makan, dapat melakukan pembayaran di kasir dan kemudian meja tersebut sudah available 
 untuk konsumen berikutnya
 
@@ -23,7 +23,5 @@ wrg makan
 1.a pilih makanan->random bangku available
 2.a bayar total harga->bangku available
 
-
-
-
+-setelah konsumen selesai makan, dapat melakukan pembayaran di kasir dan kemudian meja tersebut sudah available 
 

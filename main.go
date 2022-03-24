@@ -19,6 +19,8 @@ func main() {
 			delivery.InForm()
 		case "2":
 			delivery.CheckOut(appConfig.UseCaseManager.GetCustUseCase(), appConfig.UseCaseManager.UpdateTableUseCase())
+		case "3":
+			delivery.ExitApp()
 		}
 	}
 }

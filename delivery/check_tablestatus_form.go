@@ -12,7 +12,7 @@ func CheckTableStatus(usecase usecase.GetStatusTableUseCase) {
 	fmt.Scan(&tableNum)
 	tableStatus := usecase.GetStatusTable(tableNum)
 	if tableStatus == true {
-		fmt.Print("MEJA KOSONG, DAPAT DIISI")
+		fmt.Println("MEJA KOSONG, DAPAT DIISI")
 	} else {
 		fmt.Println("MEJA TERISI, SILAHKAN CARI MEJA LAIN")
 	}
