@@ -25,6 +25,25 @@ func (c *CustomersRepoImpl) GetHargaMakanan(kodeMakanan string) string {
 	c.custDb.Get(&selectedPrice, "SELECT harga_makanan FROM list_makanan WHERE kode_makanan = $1", kodeMakanan) // Get seperti first pada silverstripe
 	return selectedPrice
 }
+
+func (c *CustomersRepoImpl) GetTotalBill(namaCust string) string {
+	var selectedPrice string
+	c.custDb.Get(&selectedPrice, "SELECT tagihan_pembeli FROM list_pembeli WHERE nama_pembeli = $1", namaCust) // Get seperti first pada silverstripe
+	return selectedPrice
+}
+
+func (c *CustomersRepoImpl) GetTableNum(namaCust string) string {
+	var selectedTable string
+	c.custDb.Get(&selectedTable, "SELECT nomor_meja FROM list_pembeli WHERE nama_pembeli = $1", namaCust) // Get seperti first pada silverstripe
+	return selectedTable
+}
+
+func (c *CustomersRepoImpl) GetFoodCust(namaCust string) string {
+	var selectedFood string
+	c.custDb.Get(&selectedFood, "SELECT data_pesanan_pembeli FROM list_pembeli WHERE nama_pembeli = $1", namaCust) // Get seperti first pada silverstripe
+	return selectedFood
+}
+
 func NewCustomersRepo(custDb *sqlx.DB) CustomersRepo {
 	customersRepo := CustomersRepoImpl{
 		custDb: custDb,

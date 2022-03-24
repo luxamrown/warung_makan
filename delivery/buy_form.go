@@ -5,14 +5,14 @@ import (
 	"strconv"
 	"strings"
 
-	"enigmacamp.com/warung_makan/usecase"
+	"enigmacamp.com/warung_makan/manager"
 )
 
 var custName string
 var custChoiceTable int
 var custChoiceFood string
 
-func BuyForm(usecase usecase.BuyFoodUseCase) {
+func BuyForm(usecase manager.UseCaseManager) {
 
 	fmt.Println(strings.Repeat("*", 10))
 	fmt.Println("FORM PEMBELIAN")
@@ -29,8 +29,17 @@ func BuyForm(usecase usecase.BuyFoodUseCase) {
 		return
 	}
 	custChoiceTable := strconv.Itoa(custChoiceTable)
+
+	tableStatus := usecase.GetStatusTableUseCase().GetStatusTable(custChoiceTable)
+	if tableStatus == false {
+		fmt.Println("MEJA SUDAH PENUH, SILAHKAN PILIH MEJA LAIN")
+		BackToMain()
+	}
 	fmt.Print("Pilih Kode Menu: ")
 	fmt.Scan(&custChoiceFood)
-	custbill := usecase.GetHargaMakanan(custChoiceFood)
-	usecase.Insert(custName, custChoiceTable, custChoiceFood, custbill)
+	custbill := usecase.BuyFoodUseCase().GetHargaMakanan(custChoiceFood)
+	usecase.BuyFoodUseCase().Insert(custName, custChoiceTable, custChoiceFood, custbill)
+	usecase.UpdateTableUseCase().SetStatusTable(custChoiceTable, false)
+	fmt.Println("TERIMA KASIH!")
+	BackToMain()
 }

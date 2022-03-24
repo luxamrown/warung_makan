@@ -9,7 +9,7 @@ func BackToMain() {
 	var mainMenuConfirmation string
 	fmt.Print("KEMBALI KE MENU (y/n)?")
 	fmt.Scan(&mainMenuConfirmation)
-	if mainMenuConfirmation == "y" {
+	if mainMenuConfirmation == "y" || mainMenuConfirmation == "Y" {
 		MainForm()
 	}
 }

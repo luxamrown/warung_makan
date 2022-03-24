@@ -30,7 +30,7 @@ func InForm() {
 	case "4":
 		CheckTableStatus(appConfig.UseCaseManager.GetStatusTableUseCase())
 	case "5":
-		BuyForm(appConfig.UseCaseManager.BuyFoodUseCase())
+		BuyForm(appConfig.UseCaseManager)
 	}
 
 }

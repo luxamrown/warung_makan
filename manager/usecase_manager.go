@@ -8,6 +8,8 @@ type UseCaseManager interface {
 	SearchFoodByNameUseCase() usecase.SearchFoodByNameUseCase
 	GetStatusTableUseCase() usecase.GetStatusTableUseCase
 	BuyFoodUseCase() usecase.BuyFoodUseCase
+	UpdateTableUseCase() usecase.UpdateTableUseCase
+	GetCustUseCase() usecase.GetCustUseCase
 }
 
 type useCaseManager struct {
@@ -32,6 +34,14 @@ func (u *useCaseManager) GetStatusTableUseCase() usecase.GetStatusTableUseCase {
 
 func (u *useCaseManager) BuyFoodUseCase() usecase.BuyFoodUseCase {
 	return usecase.NewBuyFoodUseCase(u.repo.CustomersRepo())
+}
+
+func (u *useCaseManager) UpdateTableUseCase() usecase.UpdateTableUseCase {
+	return usecase.NewUpdateTableUseCase(u.repo.TableRepo())
+}
+
+func (u *useCaseManager) GetCustUseCase() usecase.GetCustUseCase {
+	return usecase.NewGetCustUseCase(u.repo.CustomersRepo())
 }
 
 func NewUseCaseManager(manager RepoManager) UseCaseManager {
