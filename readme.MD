@@ -54,34 +54,7 @@ untuk konsumen berikutnya
 ![image](https://user-images.githubusercontent.com/63460549/159709418-e1efb662-5e00-4519-9950-3ebddb6765cb.png)
 
 
-
-- Change Table Status to reserved if customers not pay yet
-
-
-![image](https://user-images.githubusercontent.com/63460549/159841947-1743491a-9bc9-44b0-a34b-ebb60ceb4824.png)
-
-
-
-- Print message if new customers choose the table that reserved by other customers
-
-
-![image](https://user-images.githubusercontent.com/63460549/159842557-1c5af07e-1db7-4202-81f7-1ac64603d6e2.png)
-
-
-
-- Add Checkout section where printed result of data search by customers name and asked for pay or not
-
-
-
-![image](https://user-images.githubusercontent.com/63460549/159842281-1fe7b34e-4a68-4d80-bdf7-a8e8964385f7.png)
-
-
-
-- if customers choose to pay their bill, the table is available to reserved now
-
-
-![image](https://user-images.githubusercontent.com/63460549/159842473-9caf7cac-c49a-4e6e-9be4-8ff244635cfd.png)
-
-
+## FOR UPDATED FEATURES, CHECK BRANCH 'UPDATE-TABLE' 
+https://github.com/luxamrown/warung_makan/tree/update-table
 
 
